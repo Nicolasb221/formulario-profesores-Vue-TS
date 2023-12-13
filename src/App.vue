@@ -1,27 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <TeacherForm/>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-});
+<script lang="ts" setup>
+  import TeacherForm from './components/TeacherForm.vue';
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  background-color: #213435;
+  font-family: sans-serif;
+}
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+body::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #648a64;
+  border-radius: 10px;
 }
 </style>
